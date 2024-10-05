@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src=main.js.JavaScript”></script>
-    <title>plagiat.rust</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>RUST</title>
+    <link rel="icon" type="img/rust.jpj" href="img/rust.jpg">
 </head>
 
 <body>
@@ -22,86 +31,174 @@
     </a>
     <div class="KNOPOCHKI">
         <button class="twitchdrops">TWITCH DROPS</button>
-        <div class="donate">
-            <img src="img/free-icon-debit-card-7107429 (1).png" width="35" class="donfoto" ;>DONATE FOR ME</p>
-        </div>
+        <a href="https://store.steampowered.com/app/252490/Rust/">
+            <div class="donate">
+                <img src="img/free-icon-debit-card-7107429 (1).png" width="35" align-items="center"> BUY RUST
+            </div>
+        </a>
         <div class="connectaccount">
             <p>CONNECT ACCOUNT</p>
         </div>
     </div>
-    <div class="bodyinfo"></div>
-    <div class="donatik">
-        <p class="textuik">Amound raised</p>
-        <p class="kilkistdonata">₴150.10</p>
-        <button class="buttondonat">DONATE
-            <a href="/"></a></button>
-        <button class="steaminventar">CHARITY SKINS
-            <a href="/"></a></button>
+    <div class="bodyinfo">
+        <div class="textgifok1">
+            <h1 class="title">Store Items</h1>
+            <span class="subtitle">"Items will be purchasable from Steam on the event start date. All profit proceeds go to charity."</span>
+            <span class="subtitle alert">These items will be account-bound</span>
+        </div>
     </div>
+    <div class="footerr">
+        <a href="https://rust.facepunch.com" class="logobotom">
+            <img src="img/marque-inside.png" class="rustlogobotom" alt="Rust Logobotom">
+        </a>
+        <a href="https://rust.facepunch.com" class="twich">
+            <img src="img/twitch-logo.png" class="rusttwich" alt="twich Logobotom">
+        </a>
+        <a href="https://rust.facepunch.com" class="facepunch">
+            <img src="img/facepunch-logo.png" class="" alt="facepunch Logobotom">
+        </a>
+        <p class="subtitle1">made by Ronald Logoida in 2024</p>
+    </div>
+    <div class="donatik">
+        <p class="textuik">Amount raised</p>
+        <p class="kilkistdonata">₴150.10</p>
+        <button class="buttondonat">DONATE<a href="/"></a></button>,
+        <a href="https://steamcommunity.com/my/inventory/">
+            <button class="steaminventar">CHARITY SKINS</button>
+        </a>    
+        <div class="count-down">
+            <h1>Countdown Timer</h1>
+            <div class="flipdown" id="flipdown"></div>
+        </div>
+    </div>
+    
     <img src="img/td_33-website-header-3.png" class="cerfochechka" alt="Header Image">
 
-    <div class="countdown-wrapper">
-        <h1 class="title"> Starts in</h1>
-        <div class="countdown" id=countdown>
-            <div class="time">
-                <h2 id="days">00</h2>
-                <small>Days</small>
-            </div>
-            <div class="time">
-                <h2 id="hours">00</h2>
-                <small>Hours</small>
-            </div>
-            <div class="time">
-                <h2 id="minutes">00</h2>
-                <small>Minutes</small>
-            </div>
-            <div class="time">
-                <h2 id="seconds">00</h2>
-                <small>Seconds</small>
-            </div>
-        </div>
-    </div>
-    <div>
-        <h1 class="textski0">Store Items</h1>
-        <span class="textski1">"Items will be purchasable from Steam on the event start date. All profit proceeds go to
-            charity."</span>
-        <span class="textski2">These items will be account-bound</span>
-    </div>
+        <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var toDayFromNow = (new Date("Dec 31, 2024 23:59:59").getTime() / 1000) + (3600 / 60 / 60 / 24) - 1;
+            var flipdown = new FlipDown(toDayFromNow)
+                .start()
+                .ifEnded(() => {
+                    document.querySelector(".flipdown").innerHTML = `<h2>Timer is ended</h2>`;
+                    document.style.color = 'white';
+                });
+        });
+    </script>
+    <footer>
+        <div class="bodyfoter"></div>
+    </footer>
     <div class="drop-container">
         <div class="drop-box">
-            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" target="_blank"
-                class="drop-box-body"></a>
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-body">
+                <img src="video/charitablerust_vendingmachine.gif" class="bordered-video">
+            </a>
             <div class="drop-box-footer">
-                <p class="drop-type">Vending Machine</p>
+                <p class="drop-type">VENDING MACHINE</p>
             </div>
         </div>
-        <div class="drop-box1"></div>
-        <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" target="_blank"
-            class="drop-box-body1"></a>
-        <div class="drop-box-footer1">
-            <p class="drop-type1">Semi-Automatik Rifle</p>
+        <div class="drop-box1">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-body1">
+                <img src="video/charitablerust_sar.gif" class="bordered-video1">
+            </a>
+            <div class="drop-box-footer1">
+                <p class="drop-type1">SEMI_AUTOMATIC RIFLE</p>
+            </div>
+        </div>
+        <div class="drop-box2">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-body2">
+                <img src="video/charitablerust_hoodie.gif" class="bordered-video2">
+            </a>
+            <div class="drop-box-footer2">
+                <p class="drop-type2">HOODIE</p>
+            </div>
+        </div>
+        <div class="drop-box3">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-body3">
+                <img src="video/charitablerust_armoreddoor_1.gif" class="bordered-video3">
+            </a>
+            <div class="drop-box-footer3">
+                <p class="drop-type3">ARMORED DOOR</p>
+            </div>
         </div>
     </div>
-    <div class="drop-box2"></div>
-    <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" target="_blank"
-        class="drop-box-body2">
-        <img src="video/charitablerust_hoodie.gif" class="boxik2" alt="boxiwda">
-    </a>
-    <div class="drop-box-footer2">
-        <p class="drop-type2">hoodie</p>
-    </div>
-    </div>
-    <div class="drop-box3"></div>
-    <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" target="_blank"
-        class="drop-box-body3"></a>
-    <div class="drop-box-footer3">
-        <p class="drop-typ3e">Armored door</p>
-    </div>
-    </div>
-    </div>
-    <footer>
-        <div class="foter"></div>
-    </footer>
-</body>
 
+    <div class="kartinki">
+        <h1 class="titlik">Generic Drops
+            <span>(8)</span>
+        </h1>
+        <span class="subtitlik">Available across all drops enabled
+            <a href="https://www.twitch.tv/directory/all/tags/Rust" target="_blank">Rust Twitch streams</a>
+        </span>
+    </div>
+    <div class="pictiris">
+        <div class="drop-boxik">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-bodik">
+                <img src="video/charitablerust_pants.gif" class="bordered-videoo">
+            </a>
+            <div class="drop-box-footerik">
+                <p class="drop-typik">PANTS</p>
+            </div>
+        </div>
+        <div class="drop-boxik1">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-bodik1">
+                <img src="video/charitablerust_rug.gif" class="bordered-videoo1">
+            </a>
+            <div class="drop-box-footerik1">
+                <p class="drop-typik1">RUG</p>
+            </div>
+        </div>
+        <div class="drop-boxik2">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-bodik2">
+                <img src="video/charitablerust_sleepingbag.gif" class="bordered-videoo2">
+            </a>
+            <div class="drop-box-footerik2">
+                <p class="drop-typik2">SLEEPING BAD</p>
+            </div>
+        </div>
+        <div class="drop-boxik3">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-bodik3">
+                <img src="video/charitablerust_jackhammer.gif" class="bordered-videoo3">
+            </a>
+            <div class="drop-box-footerik3">
+                <p class="drop-typik3">JACKHAMER</p>
+            </div>
+        </div>
+
+        <div class="drop-boxik4">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-bodik3">
+                <img src="video/charitablerust_leathergloves.gif" class="bordered-videoo3">
+            </a>
+            <div class="drop-box-footerik3">
+                <p class="drop-typik3">LEATHERGLOVERS</p>
+            </div>
+        </div>
+        <div class="drop-boxik5">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-bodik3">
+                <img src="video/charitablerust_hideponcho.gif" class="bordered-videoo3">
+            </a>
+            <div class="drop-box-footerik3">
+                <p class="drop-typik3">HIDEPONCHO</p>
+            </div>
+        </div>
+
+        <div class="drop-boxik6">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-bodik">
+                <img src="video/charitablerust_doubledoor.gif" class="bordered-videoo">
+            </a>
+            <div class="drop-box-footerik">
+                <p class="drop-typik">SHEET METAL DOUBLE DOOR</p>
+            </div>
+        </div>
+        <div class="drop-boxik7">
+            <a href="https://store.steampowered.com/itemstore/252490/browse/?filter=Limited" class="drop-box-bodik">
+                <img src="video/charitablerust_garagedoor.gif" class="bordered-videoo">
+            </a>
+            <div class="drop-box-footerik">
+                <p class="drop-typik">GARAGE DOOR</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
